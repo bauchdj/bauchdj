@@ -1,12 +1,17 @@
 {
-    "extends": "astro/tsconfigs/strict",
-    "compilerOptions": {
-        "baseUrl": "src",
-        "paths": {
-            "@layouts/*": ["layouts/*"],
-            "@components/*": ["components/*"],
-            "@data/*": ["lib/data/*"],
-            "@helpers/*": ["lib/helpers/*"]
-        }
-    }
+	"extends": "astro/tsconfigs/strict",
+	// "extends": "astro/tsconfigs/base",
+	"compilerOptions": {
+		"verbatimModuleSyntax": true,
+		"baseUrl": "src",
+		"paths": {
+			"@layouts/*": ["layouts/*"],
+			"@components/*": ["components/*"],
+			"@data/*": ["lib/data/*"],
+			"@helpers/*": ["lib/helpers/*"]
+		}
+	},
+	"include": [".astro/types.d.ts", "**/*"],
+	"exclude": ["dist"]
+	// "include": ["**/*.{ts,js,tsx,jsx}"]
 }
