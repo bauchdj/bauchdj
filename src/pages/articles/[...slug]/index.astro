@@ -4,7 +4,6 @@ import ArticleHeader from "@components/article/article-header.astro";
 import Divider from "@components/atoms/divider.astro";
 import ExternalLink from "@components/atoms/external-link.astro";
 import PageView from "@components/atoms/page-view.astro";
-import NewsletterButton from "@components/newsletter/newsletter-button.astro";
 import { getAllPublishedArticles } from "@data/articles";
 import ArticleLayout from "@layouts/article-layout.astro";
 import PageLayout from "@layouts/page-layout.astro";
@@ -42,6 +41,5 @@ const formattedTitle = encodeURI(article.data.title);
         >Share on <Icon name="twitter" /></ExternalLink
     >
     <Divider variant="light" classes="mb-6 mt-6" />
-    <NewsletterButton />
     <PageView slug={article.id} />
 </PageLayout>

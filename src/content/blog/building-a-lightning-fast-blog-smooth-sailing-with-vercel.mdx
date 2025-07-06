@@ -7,8 +7,6 @@ tags: [blog, astro, vercel]
 readingTime: 8
 ---
 
-import InlineNewsletter from "@components/newsletter/inline-newsletter.astro";
-
 Welcome to **“Building a Lightning-Fast Blog,”** a series where I walk you through the journey I took to build this blog using modern web development tools.
 
 In a previous article, I explained why I created a custom blog. Now it's time to dive into the technical side of things. Although this blog is simple, there are plenty of lessons and experiences I want to share with the world.
@@ -24,8 +22,6 @@ Let's continue the series with **“Smooth Sailing with Vercel.”**
 I recently built this simple blog—a static collection of content with two API endpoints. One tracks visitor access to my articles, potentially for future display of visitor counts. The other sends a validation email when someone subscribes to the newsletter.
 
 🦆 Feel free to test the endpoint right here:
-
-<InlineNewsletter />
 
 As mentioned, my blog is straightforward, so I didn't need the advanced features that Vercel or its alternatives offer. Nevertheless, I chose Vercel for a simple reason: familiarity. I knew how it worked, and I didn't want to learn something new at this stage.
 
@@ -84,8 +80,6 @@ I had a previous blog, and some URLs changed with the migration. However, I want
 The Vercel configuration file offers such a feature, and I'd used it for quite some time before finding out that Astro has a configuration for this. I feel like sharing it since the redirection works well and could be used in some cases.
 
 [Vercel's redirection configuration](https://vercel.com/docs/edge-network/redirects#configuration-redirects) is good on the subject, as is the [Astro one](https://docs.astro.build/en/guides/routing/#configured-redirects).
-
-<InlineNewsletter />
 
 ### Vercel limitations
 
